@@ -1,4 +1,4 @@
-# SiTAR (Situated Trajectory Analysis for AR): Resources
+# SiTAR (Situated Trajectory Analysis for AR)
 This repository contains resources and research artifacts for the paper "_SiTAR: Situated Trajectory Analysis for In-the-Wild Pose Error Estimation_", including the [code required to implement SiTAR](#implementation-code), as well as samples of the new [open-source VI-SLAM datasets](#datasets) we created to evaluate our pose error estimation method.
 
 # SiTAR Overview
