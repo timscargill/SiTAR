@@ -38,7 +38,7 @@ Our implementation code for SiTAR is provided in three parts, to be run on the u
 Tested with Google Pixel 7 and Google Pixel 7 Pro devices running ARCore v1.31; Apple Macbook Pro as edge server (Python 3.8).
 
 **User AR device:** 
-1) Create a Unity project with the AR Foundation template. Make sure the 'ARCore Extensions' is set up (https://developers.google.com/ar/develop/unity-arf/getting-started-extensions)
+1) Create a Unity project with the AR Foundation template. Make sure the ARCore Extensions is fully set up by following the instructions here: https://developers.google.com/ar/develop/unity-arf/getting-started-extensions.
 2) Add the 'DrawTrajectory.cs' script to the 'AR Session Origin' GameObject.
 3) Add the 'Cylinder.prefab', 'Joint.prefab' and 'Frustum.prefab' files (in the 'user-AR-device folder) to your Assets folder, and drag them to their slots in the 'Draw Trajectory' inspector panel.
 4) Add the 'ErrorHigh.mat' and 'ErrorMedium.mat' files (in the 'user-AR-device folder) to your Assets folder, and drag them to their slots in the 'Draw Trajectory' inspector panel.
