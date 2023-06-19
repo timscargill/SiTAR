@@ -1,5 +1,5 @@
 # SiTAR (Situated Trajectory Analysis for AR): Resources
-This repository contains resources and research artifacts for the paper "_SiTAR: Situated Trajectory Analysis for In-the-Wild Pose Error Estimation_", including the code required to implement SiTAR, and samples of the new open-source VI-SLAM datasets we created to evaluate our pose error estimation method.
+This repository contains resources and research artifacts for the paper "_SiTAR: Situated Trajectory Analysis for In-the-Wild Pose Error Estimation_", including the code required to implement SiTAR, as well as samples of the new open-source VI-SLAM datasets we created to evaluate our pose error estimation method.
 
 # SiTAR Overview
 Our SiTAR system provides situated visualizations of device pose error estimates, on real AR devices (implemented here for ARCore). Our current code facilitates three types of pose error visualizations, illustrated in the image below -- 1) trajectory-only (left), 2) trajectory + exclamation points (middle), 3) trajectory + warning signs (right):
