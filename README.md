@@ -24,11 +24,11 @@ Below is a short demo video of our SiTAR system in action using an edge-based ar
 
 Our implementation code for SiTAR is provided in three parts, to be run on the user AR device, the server and the playback AR device respectively. The code for each can be found in the repository folders named 'user-AR-device', 'server', and 'playback-AR-device'. The implementation code for each consists of the following:
 
-**User AR device:** a C# script 'DrawTrajectory.cs', which implements the 'Trajectory creation' and 'Trajectory visualization' modules in SiTAR.
+**User AR device:** a C# script '_DrawTrajectory.cs_', which implements the 'Trajectory creation' and 'Trajectory visualization' modules in SiTAR.
 
-**Server:** a Python script 'trajectory_evaluation.py', which implements the 'Sequence assignment' and 'Uncertainty-based error estimation' modules in SiTAR.
+**Server:** a Python script '_trajectory_evaluation.py_', which implements the 'Sequence assignment' and 'Uncertainty-based error estimation' modules in SiTAR.
 
-**Playback AR device:** a C# script 'TrajectoryPlayback.cs', which implements the 'Sequence playback' module in SiTAR.
+**Playback AR device:** a C# script '_TrajectoryPlayback.cs_', which implements the 'Sequence playback' module in SiTAR.
 
 
 # Instructions
