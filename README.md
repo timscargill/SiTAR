@@ -18,7 +18,7 @@ Below is a short demo video of our SiTAR system in action using an edge-based ar
 4) Our uncertainty-based pose error estimation running on the server ('Uncertainty-based error estimation').
 5) Situated visualization of the trajectory on the user AR device once pose error estimates are added, with high pose error associated with the blank wall highlighted using our 'trajectory + exclamation points' visualization.  
 
-<img src="https://github.com/SiTARSys/SiTAR/blob/main/SiTAR.gif" width=200% height=200%>
+<img src="https://github.com/SiTARSys/SiTAR/blob/main/SiTAR.gif" width=100% height=100%>
 
 # Implementation Code
 
