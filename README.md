@@ -16,12 +16,19 @@ Below is a short demo video of our SiTAR system in action using an edge-based ar
 2) Replaying of the visual and inertial input data for that trajectory on the playback AR device to obtain multiple trajectory estimates ('Sequence playback').
 3) Situated visualization of the trajectory on the user AR device before pose error estimates are added.
 4) Our uncertainty-based pose error estimation running on the server ('Uncertainty-based error estimation').
-5) Situated visualization of the trajectory on the user AR device once pose error estimates are added, with high pose error associated with the blank wall highlighted using our 'trajectory + exclamation points' visualization.  
+5) Situated visualization of the trajectory on the user AR device once pose error estimates are added, with high pose error associated with the blank wall highlighted using our 'trajectory + exclamation points' visualization.
 
-<img src="https://github.com/SiTARSys/SiTAR/blob/main/SiTAR.gif" width=100% height=100%>
+![SiTAR demo video](https://github.com/SiTARSys/SiTAR/blob/main/SiTAR.gif?raw=true)
 
 # Implementation Code
 
+Our implementation code for SiTAR is provided in three parts, to be run on the user AR device, the server and the playback AR device respectively. The code for each can be found in the repository folders named 'user-AR-device', 'server', and 'playback-AR-device'. The implementation code for each consists of the following:
+
+**User AR device:** a C# script 'DrawTrajectory.cs', which implements the 'Trajectory creation' and 'Trajectory visualization' modules in SiTAR.
+
+**Server:** a Python script 'trajectory_evaluation.py', which implements the 'Sequence assignment' and 'Uncertainty-based error estimation' modules in SiTAR.
+
+**Playback AR device:** a C# script 'DrawTrajectory.cs', which implements the 'Sequence playback' module in SiTAR.
 
 
 # Instructions
