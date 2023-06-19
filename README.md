@@ -14,9 +14,9 @@ Below is a short demo video of our SiTAR system in action using an edge-based ar
 
 1) Creation of a trajectory on the user AR device ('Trajectory creation').
 2) Replaying of the visual and inertial input data for that trajectory on the playback AR device to obtain multiple trajectory estimates ('Sequence playback').
-3) Situated visualization of the trajectory on the user AR device before pose error estimates are added.
+3) Situated visualization of the trajectory on the user AR device before pose error estimates are added ('Trajectory visualization without error estimates').
 4) Our uncertainty-based pose error estimation running on the server ('Uncertainty-based error estimation').
-5) Situated visualization of the trajectory on the user AR device once pose error estimates are added, with high pose error associated with the blank wall highlighted using our 'trajectory + exclamation points' visualization.
+5) Situated visualization of the trajectory on the user AR device once pose error estimates are added, with high pose error associated with the blank wall highlighted using our 'trajectory + exclamation points' visualization ('Trajectory visualization with error estimates').
 
 ![SiTAR demo video](https://github.com/SiTARSys/SiTAR/blob/main/SiTAR.gif?raw=true)
 
