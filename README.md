@@ -28,14 +28,27 @@ Our implementation code for SiTAR is provided in three parts, to be run on the u
 
 **Server:** a Python script 'trajectory_evaluation.py', which implements the 'Sequence assignment' and 'Uncertainty-based error estimation' modules in SiTAR.
 
-**Playback AR device:** a C# script 'DrawTrajectory.cs', which implements the 'Sequence playback' module in SiTAR.
+**Playback AR device:** a C# script 'TrajectoryPlayback.cs', which implements the 'Sequence playback' module in SiTAR.
 
 
 # Instructions
 
-Prerequisites: 2 or more Android devices running ARCore v1.3 or above; server with Python 3.8 or above, .
+Prerequisites: 2 or more Android devices running ARCore v1.3 or above; server with Python 3.8 or above, and evo (https://github.com/MichaelGrupp/evo) and FastAPI (https://fastapi.tiangolo.com/lo/) packages installed. For building the necessary apps to AR devices, Unity 2021.3 or later is required, with the AR Foundation framework v4.2 or later and the ARCore Extensions v1.36 or later packages installed.
 
-Tested with Google Pixel 7 and Google Pixel 7 Pro devices running ARCore v1.31; Apple Macbook Pro as edge server (Python 3.8). 
+Tested with Google Pixel 7 and Google Pixel 7 Pro devices running ARCore v1.31; Apple Macbook Pro as edge server (Python 3.8).
+
+**User AR device:** 
+1) Create a Unity project with the AR Foundation template. Make sure the 'ARCore Extensions' is set up (https://developers.google.com/ar/develop/unity-arf/getting-started-extensions)
+2) Add the 'DrawTrajectory.cs' script to the 'AR Session Origin' GameObject.
+3) Add the 'Cylinder.prefab', 'Joint.prefab' and 'Frustum.prefab' files (in the 'user-AR-device folder) to your Assets folder, and drag them to their slots in the 'Draw Trajectory' inspector panel.
+4) Add the 'ErrorHigh.mat' and 'ErrorMedium.mat' files (in the 'user-AR-device folder) to your Assets folder, and drag them to their slots in the 'Draw Trajectory' inspector panel.
+5) Add 'Start' and 'Stop' UI buttons, drag them to their slots in the 'Draw Trajectory' inspector panel, and set their OnClick actions to 'DrawTrajectory.HandleStartClick' and 'DrawTrajectory.HandleStopClick' respectively.
+6) Either hardcode your server IP address into line 481 of DrawTrajectory.cs, or add a UI panel with a text field to capture this data from the user.
+7) Set the Build platform to 'Android', select your device under 'Run device', and click 'Build and Run'.
+
+**Server:**
+
+**Playback AR device:**
 
 # Datasets
 
