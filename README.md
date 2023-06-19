@@ -33,7 +33,7 @@ Our implementation code for SiTAR is provided in three parts, to be run on the u
 
 # Instructions
 
-Prerequisites: 2 or more Android devices running ARCore v1.3 or above; server with Python 3.8 or above, and evo (https://github.com/MichaelGrupp/evo) and FastAPI (https://fastapi.tiangolo.com/lo/) packages installed. For building the necessary apps to AR devices, Unity 2021.3 or later is required, with the AR Foundation framework v4.2 or later and the ARCore Extensions v1.36 or later packages installed.
+**Prerequisites:** 2 or more Android devices running ARCore v1.3 or above; server with Python 3.8 or above, and the evo (https://github.com/MichaelGrupp/evo) and FastAPI (https://fastapi.tiangolo.com/lo/) packages installed. For building the necessary apps to AR devices, Unity 2021.3 or later is required, with the AR Foundation framework v4.2 or later and the ARCore Extensions v1.36 or later packages installed.
 
 Tested with Google Pixel 7 and Google Pixel 7 Pro devices running ARCore v1.31; Apple Macbook Pro as edge server (Python 3.8).
 
