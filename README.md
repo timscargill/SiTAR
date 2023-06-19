@@ -22,7 +22,7 @@ Below is a short demo video of our SiTAR system in action using an edge-based ar
 
 # Implementation Resources
 
-Our implementation code and associated resources for SiTAR are provided in three parts, for the **user AR device**, the **server** and the **playback AR device** respectively. The code for each can be found in the repository folders named '_user-AR-device_', '_server_', and '_playback-AR-device_'. The implementation code for each consists of the following:
+Our implementation code and associated resources for SiTAR are provided in three parts, for the **user AR device**, the **server** and the **playback AR device** respectively. The code for each can be found in the repository folders named '_user-AR-device_', '_server_', and '_playback-AR-device_'. The implementation resources consist of the following:
 
 **User AR device:** a C# script '_DrawTrajectory.cs_', which implements the 'Trajectory creation' and 'Trajectory visualization' modules in SiTAR.
 
