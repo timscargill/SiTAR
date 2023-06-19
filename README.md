@@ -8,6 +8,8 @@ Our SiTAR system provides situated visualizations of device pose error estimates
 
 The system architecture for SiTAR is shown below. The system frontend which generates situated trajectory visualizations is implemented on the **user AR device**, and the system backend which generates pose error estimates is implemented on a **server** and **playback AR device(s)**. The system backend can be implemented using an edge or cloud server.
 
+![SiTAR system architecture](https://github.com/SiTARSys/SiTAR/blob/main/SystemArchitecture.svg?raw=true)
+
 Below is a short demo video of our SiTAR system in action using an edge-based architecture. A Google Pixel 7 Pro is used as the User AR device, an Apple Macbook Pro as the server, and a Google Pixel 7 as the playback AR device. The video shows the following steps: 
 
 1) Creation of a trajectory on the user AR device ('Trajectory creation').
