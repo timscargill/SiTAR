@@ -31,7 +31,7 @@ Our implementation code and associated resources for SiTAR are provided in three
 **Playback AR device:** a C# script '_TrajectoryPlayback.cs_', which implements the 'Sequence playback' module in SiTAR.
 
 
-# Instructions
+# Implementation Instructions
 
 **Prerequisites:** 2 or more Android devices running ARCore v1.3 or above; server with Python 3.8 or above, and the evo (https://github.com/MichaelGrupp/evo) and FastAPI (https://fastapi.tiangolo.com/lo/) packages installed. For building the necessary apps to AR devices, Unity 2021.3 or later is required, with the AR Foundation framework v4.2 or later and the ARCore Extensions v1.36 or later packages installed.
 
