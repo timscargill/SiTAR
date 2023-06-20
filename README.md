@@ -73,4 +73,4 @@ Each dataset is contained in a separate folder (e.g., _Hall.zip_), which contain
 
 1) _groundtruth_ folder, containing formatted ground truth pose for sequence (_data.csv_) plus sensor characteristics from original SenseTime dataset (_sensor.yaml_).
 2) mav0 folder, containing _cam0/data_ folders with camera images, and _imu0_ folder with formatted IMU data (_data.csv_) plus sensor characteristics from original SenseTime dataset (_sensor.yaml_).
-3) _sequence_name.txt_ file (e.g., _A1.txt_) which contains a list of camera image timestamps (format required by ORB-SLAM3).
+3) _sequence_name.txt_ file (e.g., _A1.txt_), containing list of camera image timestamps (format required by ORB-SLAM3).
