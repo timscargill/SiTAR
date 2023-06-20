@@ -24,7 +24,7 @@ Below is a short demo video of our SiTAR system in action using an edge-based ar
 
 Our implementation code and associated resources for SiTAR are provided in three parts, for the **user AR device**, the **server** and the **playback AR device** respectively. The code for each can be found in the repository folders named '_user-AR-device_', '_server_', and '_playback-AR-device_'. The implementation resources consist of the following:
 
-**User AR device:** A C# script _DrawTrajectory.cs_, which implements the 'Trajectory creation' and 'Trajectory visualization' modules in SiTAR. Unity prefabs for base trajectory visualization, _Start.prefab_, _Stop.prefab_, _Cylinder.prefab_, _Joint.prefab_ and _Frustum.prefab_. Unity prefabs for pose error visualizations, _ErrorAreaHigh.prefab_, _ErrorAreaMedium.prefab_, _ErrorPatchHigh.prefab_, _ErrorPatchMedium.prefab_, _ErrorHigh.mat_ and _ErrorMedium.mat_.   
+**User AR device:** A C# script _DrawTrajectory.cs_, which implements the 'Trajectory creation' and 'Trajectory visualization' modules in SiTAR. Unity prefabs for base trajectory visualization, _Start.prefab_, _Stop.prefab_, _Cylinder.prefab_, _Joint.prefab_ and _Frustum.prefab_. Unity prefabs and materials for pose error visualizations, _ErrorAreaHigh.prefab_, _ErrorAreaMedium.prefab_, _ErrorPatchHigh.prefab_, _ErrorPatchMedium.prefab_, _ErrorHigh.mat_ and _ErrorMedium.mat_.   
 
 **Server:** a Python script _trajectory_evaluation.py_, which implements the 'Sequence assignment' and 'Uncertainty-based error estimation' modules in SiTAR.
 
