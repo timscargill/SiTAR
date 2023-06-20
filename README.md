@@ -26,14 +26,14 @@ Our implementation code and associated resources for SiTAR are provided in three
 
 **User AR device:** A C# script _DrawTrajectory.cs_, which implements the 'Trajectory creation' and 'Trajectory visualization' modules in SiTAR. Unity prefabs for base trajectory visualization, _Start.prefab_, _Stop.prefab_, _Cylinder.prefab_, _Joint.prefab_ and _Frustum.prefab_. Unity prefabs and materials for pose error visualizations, _ErrorAreaHigh.prefab_, _ErrorAreaMedium.prefab_, _ErrorPatchHigh.prefab_, _ErrorPatchMedium.prefab_, _ErrorHigh.mat_ and _ErrorMedium.mat_.   
 
-**Server:** a Python script _trajectory_evaluation.py_, which implements the 'Sequence assignment' and 'Uncertainty-based error estimation' modules in SiTAR.
+**Server:** a Python script _SiTAR-Server.py_, which implements the 'Sequence assignment' and 'Uncertainty-based error estimation' modules in SiTAR.
 
 **Playback AR device:** a C# script _TrajectoryPlayback.cs_, which implements the 'Sequence playback' module in SiTAR.
 
 
 # Implementation Instructions
 
-**Prerequisites:** 2 or more Android devices running ARCore v1.3 or above; server with Python 3.8 or above, and the evo (https://github.com/MichaelGrupp/evo) and FastAPI (https://fastapi.tiangolo.com/lo/) packages installed. For building the necessary apps to AR devices, Unity 2021.3 or later is required, with the AR Foundation framework v4.2 or later and the ARCore Extensions v1.36 or later packages installed.
+**Prerequisites:** 2 or more Android devices running ARCore v1.3 or above; server with Python 3.8 or above and the evo (https://github.com/MichaelGrupp/evo) and FastAPI (https://fastapi.tiangolo.com/lo/) Python packages installed, and Android SDK Platform Tools installed (https://developer.android.com/tools/releases/platform-tools). For building the necessary apps to AR devices, Unity 2021.3 or later is required, with the AR Foundation framework v4.2 or later and the ARCore Extensions v1.36 or later packages installed.
 
 Tested with Google Pixel 7 and Google Pixel 7 Pro devices running ARCore v1.31, and Apple Macbook Pro as edge server (Python 3.8).
 
@@ -51,6 +51,11 @@ Tested with Google Pixel 7 and Google Pixel 7 Pro devices running ARCore v1.31, 
 12) Set the Build platform to Android, select your device under Run device, and click Build and Run.
 
 **Server:**
+1) Create a folder on the server where SiTAR files will be located. Add an additional sub-folder named 'trajectories'.
+2) Download the _server_ folder in the repository to your SiTAR folder.
+3) Open the _SiTAR-Server.py_ file in the _server_ folder, complete the required configuration parameters on lines 20-29, and save.
+4) In Terminal or Command Prompt, navigate to your SiTAR folder.
+5) Start the server using the following command: ```uvicorn server.SiTAR-Server:app --host 0.0.0.0```
 
 **Playback AR device:**
 1) Create a Unity project with the AR Foundation template. Make sure the ARCore Extensions is fully set up by following the instructions here: https://developers.google.com/ar/develop/unity-arf/getting-started-extensions.
