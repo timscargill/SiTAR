@@ -68,3 +68,9 @@ Tested with Google Pixel 7 and Google Pixel 7 Pro devices running ARCore v1.31, 
 # Datasets
 
 Samples of our **Hall** and **LivingRoom** VI-SLAM datasets that we created to evaluate our uncertainty-based pose error estimation method can be downloaded here: https://drive.google.com/drive/folders/1VwAgcCly0RDUmyME4MHDrcBfkXRbitpC?usp=sharing (full datasets will be released upon paper publication).
+
+Each dataset is contained in a separate folder (e.g., _Hall.zip_), which contains sub-folders for each sequence (sequence A1 provided as sample). Each sequence folder contains the following (formatted for execution in ORB-SLAM3):
+
+1) _groundtruth_ folder, containing formatted ground truth pose for sequence (_data.csv_) plus sensor characteristics from original SenseTime dataset (_sensor.yaml_).
+2) mav0 folder, containing _cam0/data_ folders with camera images, and _imu0_ folder with formatted IMU data (_data.csv_) plus sensor characteristics from original SenseTime dataset (_sensor.yaml_).
+3) _sequence_name.txt_ file (e.g., _A1.txt_) which contains a list of camera image timestamps (format required by ORB-SLAM3).
