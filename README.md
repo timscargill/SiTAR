@@ -1,5 +1,7 @@
 # SiTAR (Situated Trajectory Analysis for AR)
-This repository contains resources and research artifacts for the paper "_SiTAR: Situated Trajectory Analysis for In-the-Wild Pose Error Estimation_", including the [code required to implement SiTAR](#implementation-resources), as well as samples of the new [open-source VI-SLAM datasets](#datasets) we created to evaluate our pose error estimation method.
+This repository contains resources and research artifacts for the paper "_SiTAR: Situated Trajectory Analysis for In-the-Wild Pose Error Estimation_", to appear in Proceedings of IEEE ISMAR '23. It includes the [code required to implement SiTAR](#implementation-resources), as well as samples of the new [open-source VI-SLAM datasets](#datasets) we created to evaluate our pose error estimation method.
+
+To create our new VI-SLAM datasets we used our previously published game engine-based emulator, **Virtual-Inertial SLAM**. For more information on this tool, implementation code and instructions, and examples of the types of projects it can support, please visit the [Virtual-Inertial SLAM GitHub repository](https://github.com/timscargill/Virtual-Inertial-SLAM/).
 
 # SiTAR Overview
 Our SiTAR system provides situated visualizations of device pose error estimates, on real AR devices (implemented here for ARCore). Our code facilitates three types of pose error visualizations, illustrated in the image below -- 1) _trajectory-only_ (left), 2) _trajectory + exclamation points_ (middle), 3) _trajectory + warning signs_ (right):
