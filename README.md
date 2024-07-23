@@ -76,3 +76,25 @@ Each dataset is contained in a separate folder (e.g., _Hall.zip_), which contain
 1) _groundtruth_ folder, containing formatted ground truth pose for sequence (_data.csv_) plus sensor characteristics from original SenseTime dataset (_sensor.yaml_).
 2) mav0 folder, containing _cam0/data_ folders with camera images, and _imu0_ folder with formatted IMU data (_data.csv_) plus sensor characteristics from original SenseTime dataset (_sensor.yaml_).
 3) _sequence_name.txt_ file (e.g., _A1.txt_), containing list of camera image timestamps (format required by ORB-SLAM3).
+
+# Citation
+
+If you use SiTAR in an academic work, please cite: 
+
+```
+@inproceedings{SiTAR,
+  title={SiTAR: Situated trajectory analysis for in-the-wild pose error estimation},
+  author={Scargill, Tim and Chen, Ying and Hu, Tianyi and Gorlatova, Maria},
+  booktitle={Proceedings of IEEE ISMAR 2023},
+  year={2022}
+ }
+ ```
+
+# Acknowledgements 
+
+The authors of this repository are Tim Scargill and Maria Gorlatova. Contact information of the authors:
+
+* Tim Scargill (timothyjames.scargill AT duke.edu)
+* Maria Gorlatova (maria.gorlatova AT duke.edu)
+
+This work was supported in part by NSF grants CSR-1903136, CNS-1908051 and CNS-2112562, NSF CAREER Award IIS-2046072, a Meta Research Award and a CISCO Research Award. 
